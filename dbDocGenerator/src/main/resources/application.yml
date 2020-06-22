@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    password: 'zrt123456'
+    url: jdbc:sqlserver://192.168.1.111:1433;DatabaseName=sq_9219
+    username: sa
+application:
+  generator:
+    schema: \public\
+    #数据库类型，当前支持mysql,postgresql
+    dbtype: SqlServerSQL
+    #生成文件的类型,当前支持excel和word和html
+    target-file-type: html
+    #使用的模板文件地址
+    template-file-path: htmlTemplate2.html
+    #生成文件的目录
+    target-file-dir: D:\generator1\doc
+    #黑名单，支持正则表达式
+    #blacklist:
+    #  - '.*'
+    #白名单，支持正则表达式
+    #whitelist:
+    #  - 't_cc.*'

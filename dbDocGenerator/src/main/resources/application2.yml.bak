@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    password: 'ef'
+    url: jdbc:postgresql://192.168.1.143:5432/zrt_ef_3?stringtype=unspecified
+    username: ef
+application:
+  generator:
+    schema: \log\,\base\,\analysis\,\data\,\qh\,\stat\
+    #数据库类型，当前支持mysql
+    dbtype: PostgreSQL
+    #生成文件的类型,当前支持excel和word和html
+    target-file-type: html
+    #使用的模板文件地址
+    template-file-path: htmlTemplate2.html
+    #生成文件的目录
+    target-file-dir: D:\generator1\doc
+    #黑名单，支持正则表达式
+    #blacklist:
+    #  - '.*'
+    #白名单，支持正则表达式
+    #whitelist:
+    #  - 't_cc.*'
